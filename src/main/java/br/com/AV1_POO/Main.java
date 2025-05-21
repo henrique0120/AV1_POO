@@ -20,7 +20,7 @@ public class Main {
 		System.out.println("4 - Instagram");
 		System.out.print("Opção: ");
 		int opcao = scanner.nextInt();
-		scanner.nextLine(); // Limpa buffer
+		scanner.nextLine();
 
 		Canal canal = null;
 
@@ -33,7 +33,6 @@ public class Main {
 			case 2:
 				System.out.print("Digite o número de telefone ou nome de usuário: ");
 				String inputTelegram = scanner.nextLine();
-				// Você pode adicionar lógica para diferenciar telefone/usuário se quiser
 				canal = new Telegram(inputTelegram);
 				break;
 			case 3:
@@ -58,7 +57,7 @@ public class Main {
 		System.out.println("4 - Arquivo");
 		System.out.print("Opção: ");
 		int tipoMsg = scanner.nextInt();
-		scanner.nextLine(); // Limpa buffer
+		scanner.nextLine();
 
 		Mensagem mensagem = null;
 

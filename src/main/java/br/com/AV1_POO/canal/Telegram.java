@@ -3,7 +3,7 @@ package br.com.AV1_POO.canal;
 import br.com.AV1_POO.mensagem.Mensagem;
 
 public class Telegram implements Canal {
-    private String identificador; // pode ser número ou usuário
+    private String identificador;
 
     public Telegram(String identificador) {
         this.identificador = identificador;
